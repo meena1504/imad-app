@@ -74,8 +74,9 @@ var htmlTemplate =
     ${content}
     </div>
      </div>
-</body></html>
-';
+</body>
+</html>
+
 return htmlTemplate;  
 }
 
