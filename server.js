@@ -11,18 +11,10 @@ var articleOne = {
     date: aug 19 2017,
     content: `<p>
             This is my first article.
-This is my first article.This is my first article.This is my first article.This is my first article.        </p>
-
-<p>
-            This is my first article.
-This is my first article.This is my first article.This is my first article.This is my first article.        </p>
-
-<p>
-            This is my first article.
-This is my first article.This is my first article.This is my first article.This is my first article.        </p>`
+This is my first article.This is my first article.This is my first article.This is my first article.</p><p>This is my first article.
+This is my first article.This is my first article.This is my first article.This is my first article.</p><p>This is my first article.
+This is my first article.This is my first article.This is my first article.This is my first article. </p>`
 };
-
-
 function createTemplate (data) {
 
 var title = data.title;
