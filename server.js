@@ -22,7 +22,7 @@ This is my first article.This is my first article.This is my first article.This 
             This is my first article.
 This is my first article.This is my first article.This is my first article.This is my first article.        </p>`
 },
-'article-two': { 
+    'article-two': { 
     title: 'article two of Meena',
     heading: 'articletwo',
     date: 'aug 19, 2017',
@@ -84,16 +84,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.send(createTemplate(article-one));
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.send(createTemplate(article-two));
-});
-
-app.get('/ui/style.css', function (req, res) {
-  res.send(createTemplate(article-three));
+app.get('/:articleName', funtion (req, res) {
+    var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
