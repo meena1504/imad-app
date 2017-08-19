@@ -36,7 +36,7 @@ This is my first article.This is my first article.This is my first article.This 
     date: 'aug 19, 2017',
     content: `  <p>
             This is my third article.  </p>`
-}  
+},  
         
     };
 
@@ -88,11 +88,12 @@ app.get('/ui/style.css', function (req, res) {
   res.send(createTemplate(article-one));
 });
 
-app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+  res.send(createTemplate(article-two));
+});
+
+app.get('/ui/style.css', function (req, res) {
+  res.send(createTemplate(article-three));
 });
 
 app.get('/ui/style.css', function (req, res) {
