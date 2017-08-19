@@ -37,8 +37,9 @@ var htmlTemplate =
     <title>
         ${title}
     </title>
+    <link href="/ui/style.css" rel="stylesheet" />
 </head>
- <link href="/ui/style.css" rel="stylesheet" />
+ 
 <body>
     <div class="container">
         
