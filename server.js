@@ -16,7 +16,6 @@ This is my first article.This is my first article.This is my first article.This 
 This is my first article.This is my first article.This is my first article.This is my first article. </p>`
 };
 function createTemplate (data) {
-
 var title = data.title;
 var date = data.date;
 var heading = data.heading;
